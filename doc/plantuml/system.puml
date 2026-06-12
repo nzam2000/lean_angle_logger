@@ -1,0 +1,28 @@
+@startuml
+left to right direction
+skinparam BackgroundColor white
+skinparam componentStyle rectangle
+
+package "Motorcycle Lean-Angle Logger" {
+
+    node "Sensors & Inputs" {
+        component [MPU-6050\nIMU Sensor] as IMU
+        component [User Button] as Button
+    }
+
+    component [STM32 NUCLEO-L476RG] as MCU #LightBlue
+
+    node "Storage" {
+        component [SD Card Module] as SD
+        file "LOG_DATA.BIN" as LogFile
+    }
+
+    ' Left-to-Right Connections
+    IMU ==> MCU : I2C
+    IMU --> MCU : Interrupt
+    Button --> MCU : Interrupt
+
+    MCU ==> SD : SPI
+    SD ..> LogFile : Writes
+}
+@enduml
