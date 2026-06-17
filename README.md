@@ -13,7 +13,6 @@ Logging system for motorcycle lean angles.
 - Setup python virtual environment 
   - `python3 -m venv .venv && source .venv/bin/activate`
   - `cd zephyrproject && pip install -r zephyr/scripts/requirements.txt`
-  - `python3 -m pip install west`
 - Setup the zephyr project
   - `west init -l zephyr`
   - `west config manifest.project-filter -- -.*,+zephyr,+cmsis,+cmsis_6,+hal_stm32,+fatfs`
