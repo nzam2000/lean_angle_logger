@@ -3,7 +3,7 @@
   set(BOARD nucleo_l476rg)
 
   include("../cmake/zephyr.cmake")
-  find_package(Zephyr)
+  find_package(Zephyr REQUIRED HINTS ${ZEPHYR_BASE})
 
   project(lean_angle_logger)
 
