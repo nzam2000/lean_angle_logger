@@ -8,6 +8,8 @@ Logging system for motorcycle lean angles.
 
 ## Setup (linux)
 
+- Initialize submodules (if not already)
+  - `git submodule update --init --recursive`
 - Setup python virtual environment 
   - `python3 -m venv .venv && source .venv/bin/activate`
   - `cd zephyrproject && pip install -r zephyr/scripts/requirements.txt`
@@ -18,5 +20,12 @@ Logging system for motorcycle lean angles.
   - `west update`
   - `west sdk install --gnu-toolchains arm-zephyr-eabi --install-dir zephyr-sdk`
 
-## Building
+### CLion IDE Configuration
 
+- Open directory at repository root
+- Setup toolchain and environment
+  - Preferences > Build, Execution, Deployment > Toolchains
+  - '+' (Add) > System
+  - Name > "zephyr (lean_angle_logger)"
+  - Add Environment > From File
+    - Specify path to .venv/bin/activate
