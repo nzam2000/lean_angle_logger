@@ -29,3 +29,7 @@ Logging system for motorcycle lean angles.
   - Name > "zephyr (lean_angle_logger)"
   - Add Environment > From File
     - Specify path to .venv/bin/activate
+
+## Building and Debugging
+
+- If using CLion, use the "all" run configuration
