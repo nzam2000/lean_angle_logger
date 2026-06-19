@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeSharedSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug-zephyr (lean_angle_logger)" ENABLED="true" CONFIG_NAME="Debug" TOOLCHAIN_NAME="zephyr (lean_angle_logger)" />
+      <configuration PROFILE_NAME="Debug-zephyr (lean_angle_logger)" ENABLED="true" GENERATION_DIR="build" CONFIG_NAME="Debug" TOOLCHAIN_NAME="zephyr (lean_angle_logger)" />
     </configurations>
   </component>
 </project>

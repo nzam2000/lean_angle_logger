@@ -29,6 +29,10 @@ Logging system for motorcycle lean angles.
   - Add Environment > From File
     - Specify path to .venv/bin/activate
 
-## Building and Debugging
+#### Building
 
-- If using CLion, use the "all" run configuration
+- Build the "zephyr_final" configuration
+
+#### Debugging (Segger jlink)
+
+- See [guide](https://kb.segger.com/Connecting_to_STM32_Nucleo_boards) for connections to board
