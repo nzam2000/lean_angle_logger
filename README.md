@@ -36,3 +36,4 @@ Logging system for motorcycle lean angles.
 #### Debugging (Segger jlink)
 
 - See [guide](https://kb.segger.com/Connecting_to_STM32_Nucleo_boards) for connections to board
+- To view console output, need to add linux user to dialout: `sudo usermod -aG dialout $USER`
