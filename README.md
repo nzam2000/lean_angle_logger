@@ -8,6 +8,12 @@ Logging system for motorcycle lean angles.
 
 ## Setup (linux)
 
+## Install dependencies
+
+- `sudo apt install stlink-tools`
+
+### Setup Repository
+
 - Initialize submodules (if not already)
   - `git submodule update --init --recursive`
 - Setup python virtual environment 
