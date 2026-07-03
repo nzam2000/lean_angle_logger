@@ -34,6 +34,9 @@ Logging system for motorcycle lean angles.
   - Name > "zephyr (lean_angle_logger)"
   - Add Environment > From File
     - Specify path to .venv/bin/activate
+- Load the CMake project
+  - In the file tree, right-click `app/CMakeLists.txt` > Load CMake Project
+  - This should load the preconfigured CMake configuration
 
 #### Building
 
@@ -43,3 +46,7 @@ Logging system for motorcycle lean angles.
 
 - See [guide](https://kb.segger.com/Connecting_to_STM32_Nucleo_boards) for connections to board
 - To view console output, need to add linux user to dialout: `sudo usermod -aG dialout $USER`
+
+#### Flashing (ST-Link)
+
+- Run the st-link-flash CMake configuration
